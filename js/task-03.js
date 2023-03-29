@@ -16,8 +16,9 @@ const gallery = document.querySelector(".gallery");
 
 const img = images
   .map((image) => `<li><img src="${image.url}" /></li>`)
-  .join("");
-
+  .join("")
+  gallery.style.display = "flex";
+  
 console.log(img);
 
 gallery.innerHTML = img;
