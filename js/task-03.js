@@ -14,11 +14,19 @@ const images = [
 ];
 const gallery = document.querySelector(".gallery");
 
+
 const img = images
   .map((image) => `<li><img src="${image.url}" /></li>`)
   .join("")
+  gallery.style.maxWidth = "900px";
+  gallery.style.margin = "0 auto";
+  gallery.style.backgroundColor = "teal";
   gallery.style.display = "flex";
-  
-console.log(img);
+  gallery.style.gap = "30px";
+  gallery.style.flexWrap = "wrap";
+  gallery.style.listStyleType = "none";
 
+ 
+  
 gallery.innerHTML = img;
+
